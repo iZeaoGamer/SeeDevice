@@ -32,7 +32,7 @@ class SeeDevice extends PluginBase implements Listener{
     }
     $config = new Config($this->getDataFolder().'config.yml',Config::YAML);
     if($config->get("TaskName_Device") == "true"){
-      $this->getScheduler()->scheduleRepeatingTask(new TheTask($this), 11);
+      $this->getScheduler()->scheduleRepeatingTask(new TheTask($this), 20);
     }
 }
   public static function getInstance(){
